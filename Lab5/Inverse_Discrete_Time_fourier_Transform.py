@@ -8,7 +8,7 @@ import scipy.special as special\
 def integrand(w,x,e):
     return x[w]*e
 
-def dtft(xw,N):
+def idtft(xw,N):
     x=[]
     j=cm.sqrt(-1)
     n=len(x)
@@ -26,7 +26,7 @@ def dtft(xw,N):
     plt.plot(w,np.abs(x))
     return(xw)
 xw=np.array(input("enter x[n] value"))
-dtft(x,10)
+idtft(x,10)
 plt.xlabel("frequency")
 plt.ylabel("|x[w]|")
 plt.show()
