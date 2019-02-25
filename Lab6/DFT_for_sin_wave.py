@@ -28,8 +28,11 @@ def DFT(x,N):
 	return(X)
 
 N=int(input("enter no. of samples"))  #choose 8-point or 4-point dft
+
+#sine wave generate
 t=np.arange(-10,10,0.1)
 x=np.sin(2*np.pi*t)
+
 DFT(x,N)
 
 plt.show()
